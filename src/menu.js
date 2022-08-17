@@ -1,13 +1,23 @@
+import biscotto from "./images/biscottodellanonna.jpg";
+import cioccolato from "./images/cioccolatoallatte.jpeg";
+import croccante from "./images/croccantedellanonna.jpeg";
+import fragola from "./images/fragola.jpeg";
+import frutto from "./images/futtodibosco.jpeg";
+import pannacotta from "./images/pannacotta.jpeg";
+import straccia from "./images/stracciatella.jpeg";
+import yogurtLampone from "./images/yogurtallampone.jpeg";
+import pistacchio from "./images/pestodipistacchio.jpeg";
+
 const gelato = [
-  { name: "Biscotto della Nonna", src: "./images/biscottodellanonna.jpg" },
-  { name: "Cioccolato al Latte", src: "./images/cioccolatoallatte.jpeg" },
-  { name: "Croccante della Nonna", src: "./images/croccantedellanonna.jpeg" },
-  { name: "Fragola", src: "./images/fragola.jpeg" },
-  { name: "Frutto di Bosco", src: "./images/futtodibosco.jpeg" },
-  { name: "Panna Cotta", src: "./images/pannacotta.jpeg" },
-  { name: "Stracciatella", src: "./images/stracciatella.jpeg" },
-  { name: "Yogurt al Lampone", src: "./images/yogurtallampone.jpeg" },
-  { name: "Pesto di Pistacchio", src: "./images/pestodipistacchio.jpeg" },]
+  { name: "Biscotto della Nonna", src: biscotto },
+  { name: "Cioccolato al Latte", src: cioccolato },
+  { name: "Croccante della Nonna", src: croccante },
+  { name: "Fragola", src: fragola },
+  { name: "Frutto di Bosco", src: frutto },
+  { name: "Panna Cotta", src: pannacotta },
+  { name: "Stracciatella", src: straccia },
+  { name: "Yogurt al Lampone", src: yogurtLampone },
+  { name: "Pesto di Pistacchio", src: pistacchio },]
 
 function card(obj) {
   const div = document.createElement('div');
@@ -41,4 +51,5 @@ function initMenu() {
   menu.appendChild(grid);
   document.querySelector('#content').appendChild(menu);
 }
-initMenu();
+
+export default initMenu;

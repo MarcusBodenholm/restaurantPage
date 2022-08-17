@@ -11,21 +11,22 @@ function initialize() {
 
 function list() {
   const nav = document.createElement('nav');
-  function createLi(id) {
+  function createLi(id, text) {
     const li = document.createElement('li');
-    li.id = id.toLowerCase();
-    li.innerHTML = id;
+    li.id = id;
+    li.innerHTML = text;
     return li;
   }
   const ul = document.createElement('ul');
   ul.classList.add('tabs')
-  const home = createLi("Home");
-  const menu = createLi("Menu");
-  const contact = createLi("Contact");
+  const home = createLi("initHome", "Home");
+  const menu = createLi("initMenu", "Menu");
+  const contact = createLi("initContact", "Contact");
   ul.appendChild(home);
   ul.appendChild(menu);
   ul.appendChild(contact);
   nav.appendChild(ul);
   return nav;
 }
-initialize();
+
+export default initialize;

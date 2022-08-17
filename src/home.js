@@ -1,3 +1,5 @@
+import homeImage from './test.jpg';
+
 const text = [
   `Welcome to the best Gelateria this side of the Italian border. At our establishments you can enjoy authentic
   Italian gelato. Choose
@@ -14,7 +16,7 @@ function initHome() {
   const div = document.createElement('div');
   div.classList.add('image');
   const image = document.createElement('img');
-  image.src = "./test.jpg";
+  image.src = homeImage;
   image.alt = "Gelateria";
   div.appendChild(image);
   home.appendChild(div);
@@ -28,4 +30,4 @@ function initHome() {
   })
   document.querySelector('#content').appendChild(home);
 }
-initHome();
+export default initHome;

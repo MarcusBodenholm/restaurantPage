@@ -45,4 +45,5 @@ function initContact() {
   contact.appendChild(ul);
   document.querySelector('#content').appendChild(contact)
 }
-initContact();
+
+export default initContact;
