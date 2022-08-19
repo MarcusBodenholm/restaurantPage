@@ -36,11 +36,11 @@ function card(obj) {
 function initMenu() {
   const menu = document.createElement('div');
   menu.classList.add('menu');
-  const h2 = document.createElement('h2');
-  h2.innerHTML = "Gelato Flavors";
-  menu.appendChild(h2);
+  const h1 = document.createElement('h1');
+  h1.innerHTML = "Gelato Flavors";
+  menu.appendChild(h1);
   const para = document.createElement('p');
-  para.innerHTML = `Below are but a few of the flavors you can choose from at Gelateria Generica!`;
+  para.innerHTML = `Below are but a few of the flavors you can choose from at Gelateria Generica! Remember that you can choose your own combination of these flavors to create your own favorite gelato. Our recommendation is to start with Le Due Nonne: Combine Biscotto della Nonna with Croccante della Nonna! You will not regret it.`;
   menu.appendChild(para);
   const grid = document.createElement('div');
   grid.classList.add('grid');

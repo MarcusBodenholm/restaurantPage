@@ -42,7 +42,11 @@ function initContact() {
     li.appendChild(p);
     ul.appendChild(li);
   })
+  const p = document.createElement('p');
+  p.innerHTML = `Credit for the images on this simple page goes to my favorite gelateria in Italy, Gelateria La Romana. Please check them out, link in the footer below, and visit them if you ever find yourself near one of their locations!`
+  p.classList.add('credit');
   contact.appendChild(ul);
+  contact.appendChild(p)
   document.querySelector('#content').appendChild(contact)
 }
 

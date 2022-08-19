@@ -6,6 +6,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -20,6 +21,30 @@ header {
   align-items: center;
   background-color: black;
   border-bottom: 4px solid #bfaf9b
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-top: 4px solid #bfaf9b
+}
+
+footer>p {
+  color: white;
+  margin-right: 5px;
+}
+
+footer>a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
 }
 
 nav {
@@ -49,10 +74,15 @@ nav {
   font-weight: bold;
 }
 
+.tabs>.current {
+  background-color: rgb(197, 130, 4);
+}
+
 #content {
   max-width: 810px;
-  flex: 1 1;
-  min-height: 510px;
+  flex: 2 1;
+  height: 100%;
+  overflow: auto;
   margin: 0 auto;
   padding: 10px 20px 10px 20px;
   display: flex;
@@ -101,6 +131,10 @@ img {
   font-weight: bold;
 }
 
+ul {
+  padding-left: 20px;
+}
+
 li {
   list-style: none;
   font-weight: bold;
@@ -109,4 +143,9 @@ li {
 li>p {
   margin-top: 5px;
   font-weight: 500;
+}
+
+.credit {
+  font-style: italic;
+  margin-top: 40px;
 }

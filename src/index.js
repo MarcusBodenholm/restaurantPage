@@ -6,24 +6,26 @@ import './style.css';
 
 initialize();
 initHome();
-initMenu();
-initContact();
 
 const functions = {
   "initHome": initHome,
   "initMenu": initMenu,
   "initContact": initContact,
 }
+let current = "initHome";
 
 const content = document.querySelector('#content')
 
 const tabs = document.querySelectorAll('.tabs > li');
 tabs.forEach(tab => tab.addEventListener('click', (e) => {
-  console.log(e)
-  reset()
-  const test = functions[e.target.id];
-  console.log(test)
-  test()
+  if (e.target.id !== current) {
+    document.getElementById(current).classList.remove('current');
+    document.getElementById(e.target.id).classList.add('current');
+    current = e.target.id;
+    reset()
+    const test = functions[e.target.id];
+    test()
+  }
 }))
 
 function reset() {
