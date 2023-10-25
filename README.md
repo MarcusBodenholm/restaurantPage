@@ -6,7 +6,7 @@ To that end I first created a HTML page to visualize the structure, and then tur
 
 The page is inspired by Italian gelaterias, and specifically La Romana. Credit to them for the assets: https://www.gelateriaromana.com/en/
 
-**Live preview:** [here](https://shedcape.github.io/restaurantPage/)
+**Live preview:** [here](https://marcusbodenholm.github.io/restaurantPage/)
 
 ## Built using
 
